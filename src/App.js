@@ -2,6 +2,14 @@ import React, {Component} from 'react';
 import FoodComponent from './components/Food';
 import foods from './data/foods.json';
 
+
+// Tailwind is not showing in browser, so I'm not sure what part of it I haven't implemented correctly.
+
+// My handleOnChange function is causing my app to crash, but I'm not sure what is missing? 
+
+//I'd appreciate any feedback so I can get this to look more decent and get the functions in! 
+
+
 class App extends Component {
 state = {
   searchInput: '',
