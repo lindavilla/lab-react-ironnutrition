@@ -13,28 +13,21 @@ class Food extends Component {
             this.props.onAddCart ( {
             name,
             totalCalories: qty * calories,
-            qty: qty,
+            qty: parseInt(qty),
             });
 
         }
     }
 
 
-        this.props.onAddCart ({
-            name,
-            totalCalories: qty * calories,
-            qty,
-        });
-        };
-
     handleInput = (event) => {
         this.setState({
-            qty: parseInt(event.target.vale),
+            qty: parseInt(event.target.value),
         });
     };
 
     render () {
-        const{name, img, calories} = this.props
+        const{name, img, calories} = this.props;
         const {qty} = this.state;
 
         return (
